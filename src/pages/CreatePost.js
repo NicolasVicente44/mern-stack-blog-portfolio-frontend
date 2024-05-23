@@ -28,7 +28,7 @@ export default function CreatePost() {
     data.set("file", files[0]);
 
     const response = await fetch(
-      "https://mern-blog-backend-fd7k.onrender.com/post",
+      "https://mern-blog-portfolio-backend.onrender.com/post",
       {
         method: "POST",
         body: data,

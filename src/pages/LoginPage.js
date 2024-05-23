@@ -10,7 +10,7 @@ export default function LoginPage() {
   async function login(ev) {
     ev.preventDefault();
     const response = await fetch(
-      "https://mern-blog-backend-fd7k.onrender.com/login",
+      "https://mern-blog-portfolio-backend.onrender.com/login",
       {
         method: "POST",
         body: JSON.stringify({ username, password }),

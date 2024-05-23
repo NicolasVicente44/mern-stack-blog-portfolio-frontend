@@ -15,7 +15,7 @@ export default function EditPost() {
       return;
     }
 
-    fetch(`https://mern-blog-backend-fd7k.onrender.com/post/${id}`)
+    fetch(`https://mern-blog-portfolio-backend.onrender.com/post/${id}`)
       .then((response) => {
         if (!response.ok) {
           throw new Error("Post not found");
@@ -44,7 +44,7 @@ export default function EditPost() {
       data.set("file", files?.[0]);
     }
     const response = await fetch(
-      "https://mern-blog-backend-fd7k.onrender.com/post",
+      "https://mern-blog-portfolio-backend.onrender.com/post",
       {
         method: "PUT",
         body: data,
@@ -59,7 +59,7 @@ export default function EditPost() {
   async function deletePost() {
     try {
       const response = await fetch(
-        `https://mern-blog-backend-fd7k.onrender.com/post/${id}`,
+        `https://mern-blog-portfolio-backend.onrender.com/post/${id}`,
         {
           method: "DELETE",
           credentials: "include",

@@ -9,7 +9,7 @@ export default function PostPage() {
   const { userInfo } = useContext(UserContext);
   const { id } = useParams();
   useEffect(() => {
-    fetch(`https://mern-blog-backend-fd7k.onrender.com/post/${id}`).then(
+    fetch(`https://mern-blog-portfolio-backend.onrender.com/post/${id}`).then(
       (response) => {
         response.json().then((postInfo) => {
           setPostInfo(postInfo);
@@ -48,7 +48,7 @@ export default function PostPage() {
       )}
       <div className="image">
         <img
-          src={`https://mern-blog-backend-fd7k.onrender.com/${postInfo.cover}`}
+          src={`https://mern-blog-portfolio-backend.onrender.com/${postInfo.cover}`}
           alt=""
         />
       </div>
