@@ -14,7 +14,10 @@ export default function Post({
     <div className="post">
       <div className="image">
         <Link to={`/post/${_id}`}>
-          <img src={"http://localhost:4000/" + cover} alt="" />
+          <img
+            src={"https://mern-blog-backend-fd7k.onrender.com/" + cover}
+            alt=""
+          />
         </Link>
       </div>
       <div className="texts">
